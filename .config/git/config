@@ -1,0 +1,20 @@
+[user]
+	name = miyakoshi-3854
+	email = 208133564+miyakoshi-3854@users.noreply.github.com
+[pull]
+    ff = only
+    rebase = false
+[core]
+    eol = lf
+    ignorecase = false
+    quotepath = false
+[init]
+    defaultBranch = main
+[fetch]
+    prune = true
+[rebase]
+    autosquash = true
+[credential]
+	helper = /mnt/c/Program\\ Files/Git/mingw64/bin/git-credential-manager.exe
+[ghq]
+  root = ~/ghq
