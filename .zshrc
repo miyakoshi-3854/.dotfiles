@@ -3,6 +3,7 @@ eval "$(starship init zsh)"
 
 # mise有効化
 eval "$(mise activate zsh)"
+eval "$(mise completion zsh)"
 
 # fzf有効化
 source <(fzf --zsh)
