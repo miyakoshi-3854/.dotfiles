@@ -7,9 +7,6 @@ eval "$(mise activate zsh)"
 # fzf有効化
 source <(fzf --zsh)
 
-# path適応
-export PATH="$HOME/.local/bin:$PATH"
-
 # get repo list
 function ghq-fzf() {
   local repo=$(ghq list | fzf --query="$1")
@@ -35,6 +32,20 @@ function gwq-fzf() {
   fi
 
   gwq add -b "$branch" -s
+
+  # 元のworktreeから.envをすべてコピー
+  local new_path="$(ghq root)/${repo}=${branch}"
+  local copied=0
+  while IFS= read -r env_file; do
+    local relative="${env_file#${repo_path}/}"
+    local dest="${new_path}/${relative}"
+    mkdir -p "$(dirname "$dest")"
+    cp "$env_file" "$dest"
+    copied=$((copied + 1))
+  done < <(find "${repo_path}" -name ".env" -not -path "*/.git/*")
+  if [ "$copied" -gt 0 ]; then
+    echo ".env を ${copied} 件コピーしました"
+  fi
 }
 alias wc=gwq-fzf
 
