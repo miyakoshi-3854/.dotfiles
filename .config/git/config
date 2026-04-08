@@ -16,5 +16,8 @@
     autosquash = true
 [credential]
 	helper = /mnt/c/Program\\ Files/Git/mingw64/bin/git-credential-manager.exe
+[alias]
+    pl = pull
+    sta = stash
 [ghq]
   root = ~/ghq
