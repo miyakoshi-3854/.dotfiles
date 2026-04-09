@@ -1,6 +1,6 @@
 [tools]
 starship = "latest"
-"ubi:cli/cli" = "latest"
+"github:cli/cli" = "latest"
 ghq = "latest"
 "aqua:d-kuro/gwq" = "latest"
 fzf = "latest"
