@@ -24,7 +24,6 @@ link .config/git/config
 link .config/gh/config.yml
 link .config/mise/config.toml
 link .config/gwq/config.toml
-link .config/gwq/registry.json
 
 echo ""
 echo "install.sh done. Run 'mise install' to install tools."
