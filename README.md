@@ -1,11 +1,11 @@
-# .dotfile
+# .dotfiles
 
 Personal dotfiles for WSL2 / macOS.
 
 ## Directory Structure
 
 ```
-.dotfile/
+.dotfiles/
 ├── .config/
 │   ├── gh/config.yml
 │   ├── git/config
@@ -24,7 +24,7 @@ Follow the official instructions: https://mise.jdx.dev/getting-started.html
 ### 2. Clone this repo
 
 ```bash
-git clone https://github.com/miyakoshi-3854/.dotfile.git ~/.dotfile
+git clone https://github.com/miyakoshi-3854/.dotfiles.git ~/.dotfiles
 ```
 
 ### 3. Run install script
@@ -32,7 +32,7 @@ git clone https://github.com/miyakoshi-3854/.dotfile.git ~/.dotfile
 Symlinks config files to their expected locations under `$HOME`.
 
 ```bash
-cd ~/.dotfile
+cd ~/.dotfiles
 ./install.sh
 ```
 
