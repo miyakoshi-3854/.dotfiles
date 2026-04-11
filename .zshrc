@@ -1,11 +1,7 @@
-# starship有効化
+# apply tools
 eval "$(starship init zsh)"
-
-# mise有効化
 eval "$(mise activate zsh)"
 eval "$(mise completion zsh)"
-
-# fzf有効化
 source <(fzf --zsh)
 
 # get repo list
@@ -51,13 +47,16 @@ function gwq-fzf() {
 alias wc=gwq-fzf
 
 # remove branch
-alias wr="gwq remove"
+alias wr="gwq remove -b"
 
 # prune directory
 alias wp="gwq prune"
 
+# git shortcut
+alias g="git"
+
 # mise shortcut
 alias mr="mise run"
 
-# cursor shortcut
+# open cursor
 alias c="cursor ."
