@@ -1,11 +1,11 @@
-# .dotfiles
+# dotfiles
 
 Personal dotfiles for WSL2 / macOS.
 
 ## Directory Structure
 
 ```
-.dotfiles/
+dotfiles/
 ├── .config/
 │   ├── gh/config.yml
 │   ├── git/config
@@ -30,7 +30,7 @@ mise install ghq
 ### 3. Clone this repo
 
 ```bash
-ghq get miyakoshi-3854/.dotfiles
+ghq get miyakoshi-3854/dotfiles
 ```
 
 ### 4. Run install script
@@ -38,7 +38,7 @@ ghq get miyakoshi-3854/.dotfiles
 Symlinks config files to their expected locations under `$HOME`.
 
 ```bash
-cd $(ghq root)/github.com/miyakoshi-3854/.dotfiles
+cd $(ghq root)/github.com/miyakoshi-3854/dotfiles
 ./install.sh
 ```
 
