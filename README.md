@@ -21,22 +21,28 @@ Personal dotfiles for WSL2 / macOS.
 
 Follow the official instructions: https://mise.jdx.dev/getting-started.html
 
-### 2. Clone this repo
+### 2. Install ghq
 
 ```bash
-git clone https://github.com/miyakoshi-3854/.dotfiles.git ~/.dotfiles
+mise install ghq
 ```
 
-### 3. Run install script
+### 3. Clone this repo
+
+```bash
+ghq get miyakoshi-3854/.dotfiles
+```
+
+### 4. Run install script
 
 Symlinks config files to their expected locations under `$HOME`.
 
 ```bash
-cd ~/.dotfiles
+cd $(ghq root)/github.com/miyakoshi-3854/.dotfiles
 ./install.sh
 ```
 
-### 4. Install tools
+### 5. Install tools
 
 ```bash
 mise install
