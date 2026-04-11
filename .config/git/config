@@ -17,8 +17,9 @@
 [credential]
 	helper = /mnt/c/Program\\ Files/Git/mingw64/bin/git-credential-manager.exe
 [alias]
+    m = merge
     pl = pull
-    ps = push
-    sta = stash
+    p = push
+    t = stash push --staged -m
 [ghq]
-  root = ~/ghq
+    root = ~/ghq
