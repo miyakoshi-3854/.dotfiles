@@ -2,6 +2,7 @@
 eval "$(starship init zsh)"
 eval "$(mise activate zsh)"
 eval "$(mise completion zsh)"
+source <(gwq completion zsh)
 source <(fzf --zsh)
 
 # get repo list
