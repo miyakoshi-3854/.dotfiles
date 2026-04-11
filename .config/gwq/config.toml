@@ -1,5 +1,6 @@
-[naming]
-template = '{{.Host}}/{{.Owner}}/{{.Repository}}={{.Branch}}'
-
 [worktree]
 basedir = '~/ghq'
+
+[naming]
+template = '{{.Host}}/{{.Owner}}/{{.Repository}}={{.Branch}}'
+sanitize_chars = { "/" = "-", ":" = "-" }
