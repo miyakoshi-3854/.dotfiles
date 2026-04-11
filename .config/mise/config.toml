@@ -1,9 +1,9 @@
 [tools]
-starship = "latest"
-"github:cli/cli" = "latest"
-ghq = "latest"
+"aqua:starship/starship" = "latest"
+"aqua:cli/cli" = "latest"
+"aqua:x-motemen/ghq" = "latest"
 "aqua:d-kuro/gwq" = "latest"
-fzf = "latest"
+"aqua:junegunn/fzf" = "latest"
 
 [env]
 _.path = ["~/.local/bin"]
